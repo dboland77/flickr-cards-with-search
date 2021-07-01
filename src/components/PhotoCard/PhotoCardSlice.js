@@ -46,7 +46,7 @@ export const fetchPhotos = () => async (dispatch) => {
   const source = axios.CancelToken.source();
   try {
     const response = await axios.get(BASEURL);
-    return dispatch(photosLoaded(response.data));
+    return dispatch(photosLoaded(response.data.items));
   } catch (error) {
     if (axios.isCancel(error)) {
       source.cancel();
@@ -59,4 +59,4 @@ export const fetchPhotos = () => async (dispatch) => {
 
 //selectors
 export const selectLoadingStatus = state=>state.photos.status 
-export const selectPhotos = state=>state.photos.photoList
+export const selectPhotos = state=>state.photos.photolist

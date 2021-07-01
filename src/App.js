@@ -11,9 +11,9 @@ import { fetchPhotos } from "./components/PhotoCard/PhotoCardSlice";
 function App() {
   const dispatch = useDispatch();
 
-  useEffect(()=> {
-    dispatch(fetchPhotos())
-  }, [dispatch])
+  useEffect(() => {
+    dispatch(fetchPhotos());
+  }, [dispatch]);
 
   return (
     <Container>

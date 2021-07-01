@@ -1,10 +1,16 @@
-import React from 'react'
+import React from 'react';
+import styles from "./PhotoCard.module.css"
+ 
 
-const PhotoCard = () => {
+const PhotoCard = ({photo}) => {
+  const {title, link,description,author,tags} = photo;
+  console.log(link)
   return (
-    <div>
-      Photo Card
-    </div>
+    <div className="card">
+    <img src={link} alt = {title}/>
+    <div className="container">
+   </div>
+  </div>
   )
 }
 
