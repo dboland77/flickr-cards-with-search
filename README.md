@@ -4,6 +4,8 @@ This app retrieves images from the flickr api and displays them along with photo
 
 The application is deployed to Netlify. 
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/13c696c3-5e09-42ad-bc00-9fca9bee2b2f/deploy-status)](https://app.netlify.com/sites/react-flickr-search/deploys)
+
 
 It allows you to:
 1. View the cards
