@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  width: 90%;
+  background: whitesmoke;
+  margin: 0 auto;
+  border: 1px solid black;
+  flex-direction: column;
+}
