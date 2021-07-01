@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Flickr Gallery with search and infinite scroll
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app retrieves images from the flickr api and displays them along with photo title, author, description and tags.
 
-## Available Scripts
+The application is deployed to Netlify. 
 
-In the project directory, you can run:
 
-### `npm start`
+It allows you to:
+1. View the cards
+2. Scroll through the cards infinitely
+3. Filter the cards by tag
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# The app is written with
+1. HTML5
+2. CSS3
+3. React
+4. Redux
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Testing coverage
+1. Jest
+2. react-testing-library
 
-### `npm test`
+The app has been unit-tested, no integration tests or end to end testing has been carried out other than manually. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Responsive
+The app is responsive and can be resized for desktop and mobile. It also displays on the following browsers:
+1. Chrome
+1. Firefox
+1. Safari
+1. IE10+
 
-### `npm run build`
+Checklist criteria from spec
+- [ ] Retrieves data from Flickr
+- [ ] Creates card components with:
+    -  [ ]  Displays photo as image
+    -  [ ] Displays photo title with link to the photo on flickr
+    -  [ ] "by" author with link to the authors flickr page under the image 
+    -  [ ] Displays description under this
+    -  [ ] Displays taglist for this photo
+- [ ] Functions as a single page app
+- [ ] Uses HTML and CSS
+- [ ] Uses Javascript
+- [ ] Uses React
+- [ ] Supports Chrome
+- [ ] Supports Firefox
+- [ ] Supports Safari
+- [ ] Supports IE10+
+- [ ] Is responsive
+- [ ] Uses infinite scroll
+- [ ] Has partial (or full) test coverage
+- [ ] Returns images that are "safe" for all ages
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*Bonus task chosen*
+- [ ] Add a loading icon animation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
